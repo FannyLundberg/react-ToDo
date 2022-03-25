@@ -1,12 +1,14 @@
+import React from "react";
 import { useState } from "react";
 import { ToDo } from "../models/ToDo";
+import { AddToDo } from "./AddToDo";
 import { PrintToDo } from "./PrintToDo";
 
 export function Todos() {
 
     const [toDos, setToDos] = useState<ToDo[]>([
         new ToDo ("Ta helg"),
-        new ToDo ("Lyssna på musik"),
+        new ToDo ("Njuta av helgen"),
     ]);
 
     function toggleDone(toggleToDo: ToDo) {
@@ -21,6 +23,9 @@ export function Todos() {
     })
 
     return (
-        <div>{printHtml}</div>
+        <React.Fragment>
+            <AddToDo></AddToDo>
+            <div>{printHtml}</div>
+        </React.Fragment>
     );
 };

@@ -9,10 +9,11 @@ interface IPrintToDoProps {
 
 const DoneToDo = styled.div`
     text-decoration: line-through;
+    color: white;
 `;
 
 const NotDoneToDo = styled.div`
-    text-decoration: none;
+    color: pink;
 `;
 
 export function PrintToDo(props: IPrintToDoProps) {

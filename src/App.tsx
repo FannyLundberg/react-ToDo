@@ -6,7 +6,13 @@ import { Todos } from './components/Todos';
 function App() {
   return (
     <React.Fragment>
-      <Todos></Todos>
+      <header>
+        <h1>"Att-göra"-lista</h1>
+      </header>
+      <main>
+        <Todos></Todos>
+      </main>
+      <footer>©</footer>
     </React.Fragment>
   );
 }

@@ -15,6 +15,7 @@ export function Todos() {
         toDoList = JSON.parse(thingToLs);
 
         setToDos(toDoList);
+        // setToDos(JSON.parse(thingToLs));
 
         console.log(toDos)
         console.log(toDoList)
